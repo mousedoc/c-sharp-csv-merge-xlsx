@@ -1,4 +1,6 @@
 ﻿# csv-merge-tool
+![Englsh](https://img.shields.io/badge/Language-English-lightgrey.svg) 
+[![Korean](https://img.shields.io/badge/Language-Korean-blue.svg)](README_KR.md)
 
 **Merge the .csv file on the path by sheet in to data.xlsx after create data.xlsx**
 
@@ -6,13 +8,7 @@
 **[Download](http://)**
 1. Place csv-merge-tool.exe in the path where * .csv is located
 2. Run csv-merge-xlsx
-3. 생성된 data.xlsx 확인
+3. Check data.xlsx file
 
 ## Exception
-
-- csv-merge-tool.exe의 경로에 있는 data.xlsx를 연 상태에서 실행하면 안됩니다
-
-
-## Bug report
-
-[Issues](http://git.oozooinc.com/sangyun3631/csv-merge-tool/issues)에 리포팅 해주세요
+- Do not run csv-merge-tool.exe while data.xlsx is open
