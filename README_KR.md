@@ -9,8 +9,3 @@
 1. .csv가 있는 경로에 csv-merge-xlsx.exe를 배치
 2. csv-merge-xlsx.exe 실행
 3. 생성된 data.xlsx 확인
-
-## Exception
-- data.xlsx를 연 상태에서 csv-merge-xlsx.exe를 실행하면 안됩니다
-
-
