@@ -5,7 +5,7 @@
 **Merge the .csv file on the path by sheet in to data.xlsx after create data.xlsx**
 
 ## Guide
-**[Download](/owner/name/releases/latest/download/csv-merge-xlsx.exe)**
+**[Download](https://github.com/mousedoc/c-sharp-csv-merge-xlsx/releases/download/latest/csv-merge-xlsx.exe)**
 1. Place csv-merge-tool.exe in the path where * .csv is located
 2. Run csv-merge-xlsx
 3. Check data.xlsx file
