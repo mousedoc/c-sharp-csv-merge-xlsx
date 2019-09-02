@@ -57,6 +57,7 @@ namespace csv_merge_xlsx
                 targetBook = app.Workbooks.Add(missValue);
 
                 // Copy sheets
+                Logger.Warn("Progress");
                 foreach (var path in csvFiles)
                     CopyTargetCSVSheet(path, targetBook);
 
@@ -111,7 +112,7 @@ namespace csv_merge_xlsx
             var allFiles = Directory.GetFiles("./");
             var csvFiles = new List<string>();
 
-            Logger.Log("List of .csv");
+            Logger.Warn("List of .csv");
             foreach (var localpath in allFiles)
             {
                 if (localpath.EndsWith(".csv") == false)
@@ -130,6 +131,14 @@ namespace csv_merge_xlsx
             var sourceBook = app.Workbooks.Open(path);
 
             string name = Path.GetFileNameWithoutExtension(path);
+
+            // Limit length - 31
+            int limitLength = 31;
+            if (name.Length > limitLength)
+            {
+                name = name.Substring(0, limitLength);
+            }
+
             var sheet = (Microsoft.Office.Interop.Excel.Worksheet)app.Worksheets[name];
             if (sheet == null)
             {
@@ -139,11 +148,11 @@ namespace csv_merge_xlsx
 
             string lastSheetName = string.Empty;
             foreach (Worksheet workSheet in workbook.Worksheets)
-            {
+            { 
                 lastSheetName = workSheet.Name;
             }
 
-            Logger.Warn(string.Format("Copy {0}...", name));
+            Logger.Log(string.Format("\tCopy {0}...", name));
             sheet.Copy(workbook.Worksheets[lastSheetName]);
             sourceBook.Close();
             return sheet;
