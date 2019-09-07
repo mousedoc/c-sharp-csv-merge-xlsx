@@ -3,6 +3,7 @@
 [![Korean](https://img.shields.io/badge/Language-Korean-blue.svg)](README_KR.md)
 
 **Merge the .csv file on the path by sheet in to data.xlsx after create data.xlsx**
+![intro](./image/intro.png)
 
 ## Guide
 **[Download](https://github.com/mousedoc/c-sharp-csv-merge-xlsx/raw/master/exe/csv-merge-xlsx.exe)**
