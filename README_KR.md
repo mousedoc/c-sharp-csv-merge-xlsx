@@ -3,6 +3,7 @@
 ![Korean](https://img.shields.io/badge/Language-Korean-lightgrey.svg)
 
 **csv-merge-xlsx.exe가 있는 경로의 모든 .csv를 data.xlsx에 시트로 추가해 저장해주는 툴**
+![intro](./image/intro.png)
 
 ## Guide
 **[Download](https://github.com/mousedoc/c-sharp-csv-merge-xlsx/releases/download/v1.0/csv-merge-xlsx.exe)**
